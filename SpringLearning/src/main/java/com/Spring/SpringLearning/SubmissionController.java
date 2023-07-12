@@ -21,6 +21,8 @@ public class SubmissionController {
     public SubmissionDTO getSubmission(@PathVariable String id) {
         return submissionService.getSubmission(id);
 
+
+
     }
 
     @GetMapping("/getAll")
@@ -28,13 +30,13 @@ public class SubmissionController {
         return submissionService.getAll();
     }
 
-    @PostMapping("/add")
+    @PostMapping(path="/add")
     public SubmissionDTO addSubmission(@RequestBody SubmissionDTO submission) {
         return submissionService.addSubmission(submission);
 
     }
 
-    @PutMapping("update")
+    @PutMapping("/update")
     public SubmissionDTO updateSubmission( @RequestBody SubmissionDTO submission) {
         return  submissionService.updateSubmission(submission);
 
