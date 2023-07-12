@@ -1,6 +1,5 @@
 package com.Spring.SpringLearning;
 
-import com.Spring.SpringLearning.model.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
